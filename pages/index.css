@@ -1,0 +1,47 @@
+@import url(../fonts/fonts.css);
+@import url(page.css);
+@import url(../blocks/header/haeder.css);
+@import url(../blocks/header/elem-visual.css);
+@import url(../blocks/header/__lang-link/lang-link.css);
+@import url(../blocks/header/__lang-link/lang-link_visual.css);
+@import url(../blocks/header/__logo/logo.css);
+
+* {
+  /* border: 2px solid rgb(240, 13, 13);   */
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 3% 23px 0px 23px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    margin: 3% 16px 0px 16px;
+  }
+
+  .lang-link_visual {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .header__logo_visual {
+    max-height: 42px;
+    max-width: 142px;
+  }
+}
