@@ -5,43 +5,113 @@
 @import url(../blocks/header/__lang-link/lang-link.css);
 @import url(../blocks/header/__lang-link/lang-link_visual.css);
 @import url(../blocks/header/__logo/logo.css);
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/title.css);
+@import url(../blocks/lead/__title/title_visual.css);
+@import url(../blocks/lead/__subtitle/subtitle.css);
+@import url(../blocks/lead/__subtitle/subtitle_visual.css);
+@import url(../blocks/lead/__image/image.css);
+@import url(../blocks/lead/__image/image_visual.css);
+@import url(../blocks/lead/__caption/caption.css);
 
 * {
-  /* border: 2px solid rgb(240, 13, 13);   */
-}
-
-@media (min-width: 1280px) {
+  /* border: 2px solid rgb(240, 13, 13); */
 }
 
 @media (max-width: 1280px) {
+  .header {
+    margin: 28px 48px 56px 48px;
+    max-height: 52px;
+  }
 }
 
 @media (max-width: 1024px) {
-}
-@media (max-width: 768px) {
-}
+  .lead {
+    margin: 0px 48px 0px 48px;
+  }
 
-@media (max-width: 425px) {
+  .lead__image {
+    margin: 56px auto 0px auto;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
-    margin: 3% 23px 0px 23px;
+    margin: 28px 48px 48px 48px;
+  }
+
+  .lead {
+    margin: 0;
+  }
+
+  .lead__image {
+    margin: 56px auto 0px auto;
+  }
+}
+
+@media (max-width: 665px) {
+  .lead__title_visual {
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
   }
 }
 
 @media (max-width: 425px) {
   .header {
-    margin: 3% 16px 0px 16px;
+    margin: 16px 16px 48px 16px;
   }
 
   .lang-link_visual {
     font-size: 18px;
     font-weight: 400;
+    line-height: 1.11;
   }
 
   .header__logo_visual {
     max-height: 42px;
     max-width: 142px;
+  }
+}
+
+@media (max-width: 425px) {
+  .lead {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .lead__title_visual {
+    font-size: 40px;
+    line-height: 1.1;
+    color: white;
+  }
+
+  .lead__subtitle {
+    border: 2px solid rgb(240, 13, 13);
+    max-width: 288px;
+    max-height: 40px;
+    margin: 16px auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .lead__subtitle_visual {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+  }
+
+  .lead__image {
+    margin: 40px auto 0px auto;
+  }
+}
+
+@media (max-width: 295px) {
+  .lead__title_visual {
+    font-size: 30px;
+    line-height: 1.1;
+    color: white;
   }
 }
